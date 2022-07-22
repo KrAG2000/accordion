@@ -24,7 +24,7 @@ export const keyMap = {
   k: { row: 2, column: 8 },
   l: { row: 2, column: 9 },
   ';': { row: 2, column: 10 },
-  "[": { row: 3, column: 11 },
+  ']': { row: 3, column: 11 },
   w: { row: 3, column: 1 },
   e: { row: 3, column: 2 },
   r: { row: 3, column: 3 },
@@ -78,7 +78,8 @@ export const one = [
   { id: '1-7-pull', name: 'B♭', frequency: tone.Bb[4] },
   { id: '1-8-pull', name: 'D', frequency: tone.D[5] },
   { id: '1-9-pull', name: 'E', frequency: tone.E[5] },
-  { id: '1-10-pull', name: 'G', frequency: tone.G[5] },
+  //{ id: '1-10-pull', name: 'G', frequency: tone.G[5] },
+  { id: '3-11-pull', name: 'G', frequency: tone.G[5] },
   // Push
   { id: '1-1-push', name: 'B', frequency: tone.B[3] },
   { id: '1-2-push', name: 'F', frequency: tone.F[3] },
@@ -89,7 +90,8 @@ export const one = [
   { id: '1-7-push', name: 'C', frequency: tone.C[5] },
   { id: '1-8-push', name: 'F', frequency: tone.F[5] },
   { id: '1-9-push', name: 'A', frequency: tone.A[5] },
-  { id: '1-10-push', name: 'C', frequency: tone.C[6] },
+  //{ id: '1-10-push', name: 'C', frequency: tone.C[6] },
+  { id: '3-11-push', name: 'C', frequency: tone.C[6] },
 ]
 
 export const two = [
@@ -104,7 +106,8 @@ export const two = [
   { id: '2-8-pull', name: 'E♭', frequency: tone.Eb[5] },
   { id: '2-9-pull', name: 'G', frequency: tone.G[5] },
   { id: '2-10-pull', name: 'A', frequency: tone.A[5] },
-  { id: '2-11-pull', name: 'C', frequency: tone.C[6] },
+  //{ id: '2-11-pull', name: 'C', frequency: tone.C[6] },
+  { id: '3-12-pull', name: 'C', frequency: tone.C[6] },
   // Push
   { id: '2-1-push', name: 'E', frequency: tone.E[4] },
   { id: '2-2-push', name: 'F', frequency: tone.F[3] },
@@ -116,7 +119,8 @@ export const two = [
   { id: '2-8-push', name: 'F', frequency: tone.F[5] },
   { id: '2-9-push', name: 'B♭', frequency: tone.Bb[5] },
   { id: '2-10-push', name: 'D', frequency: tone.D[6] },
-  { id: '2-11-push', name: 'F', frequency: tone.F[6] },
+  //{ id: '2-11-push', name: 'F', frequency: tone.F[6] },
+  { id: '3-12-push', name: 'F', frequency: tone.F[6] },
 ]
 
 export const three = [
@@ -199,7 +203,7 @@ export const scales = {
       ['1-7-pull', '1-8-pull'],
       ['1-9-pull', '2-7-pull'],
       ['3-7-pull', '3-6-pull'],
-      ['1-9-pull', '1-10-pull'],
+      ['1-9-pull', '3-11-pull'],
       ['2-10-pull', '3-7-pull'],
     ],
   },
